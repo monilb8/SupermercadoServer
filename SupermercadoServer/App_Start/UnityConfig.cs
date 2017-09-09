@@ -27,10 +27,10 @@ namespace SupermercadoServer
                 new InterceptionBehavior<DBInterceptor>());
             container.RegisterType<IProductoRepository, ProductoRepository>();
 
-            container.RegisterType<ITipoProductoService, TipoProductoService>(
+            container.RegisterType<ISeccionService, SeccionService>(
                 new Interceptor<InterfaceInterceptor>(),
                 new InterceptionBehavior<DBInterceptor>());
-            container.RegisterType<ITipoProductoRepository, TipoProductoRepository>();
+            container.RegisterType<ISeccionRepository, SeccionRepository>();
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

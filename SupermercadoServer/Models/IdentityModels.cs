@@ -31,7 +31,7 @@ namespace SupermercadoServer.Models
 
         public DbSet<Producto> Producto { get; set; }
 
-        public DbSet<TipoProducto> TipoProducto { get; set; }
+        public DbSet<Seccion> Seccion { get; set; }
 
         public static ApplicationDbContext Create()
         {
