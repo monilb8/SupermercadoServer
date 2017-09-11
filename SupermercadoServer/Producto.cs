@@ -14,6 +14,7 @@ namespace SupermercadoServer
         public DateTime Fecha { get; set; }
         public int Cantidad { get; set; }
         public double Peso { get; set; }
+        public int NumUnidades { get; set; }
         public  bool Oferta { get; set; }
     }
 }
